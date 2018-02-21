@@ -16,21 +16,22 @@
 <body>
       <div class="wrapper">
         <nav id="sidebar">
+            <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                <i class="glyphicon glyphicon-align-left"></i>               
+            </button>
+         
             <!-- Sidebar Header -->
             <div class="sidebar-header">
-                <h3>Collapsible Sidebar</h3>
+                <h3>Hotel`s MS</h3>
                     </div>
-                <strong>BS</strong>
 
             <!-- Sidebar Links -->
-            <ul class="list-unstyled components">
-                <li class="active">
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">
+            <ul class="list-unstyled components">    
+                <li>
+                     <a runat="server" href="~/">
                         <i class="glyphicon glyphicon-home"></i>
                         Home
-                    </a>
-                </li>
-                <li>
+                     </a>
                     <a href="#">
                         <i class="glyphicon glyphicon-briefcase"></i>
                         About
@@ -40,7 +41,7 @@
                         Pages
                     </a>
                     <ul class="collapse list-unstyled" id="pageSubmenu">
-                        <li><a href="#">Page 1</a></li>
+                        <li><a runat="server" href="~/Pages/Management/ManageFreeBookings">Manage Booking</a></li>
                         <li><a href="#">Page 2</a></li>
                         <li><a href="#">Page 3</a></li>
                     </ul>
@@ -60,17 +61,15 @@
             </ul>
         </nav>
 
-        <div id="content">
-            <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
-                <i class="glyphicon glyphicon-align-left"></i>               
-            </button>
-           <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
+          <div class="myContent"> 
+              <nav class="my-nav"></nav>  
+         <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
         </asp:ContentPlaceHolder>
         </div>
         </div>
     
 
-    <form id="form1" runat="server" class="body-form" onsubmit="return false;">
+ <%--   <form id="form1" runat="server" class="body-form" onsubmit="return false;">
 
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
@@ -100,7 +99,10 @@
                 </div>
             </div>
         </div>
-    </form>
+    </form>--%>
+    <footer>
+
+    </footer>
          <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
@@ -110,7 +112,8 @@
                      $('#sidebar').toggleClass('active');
                  });
              });
-         </script>
+         </script>
+
     
 
 

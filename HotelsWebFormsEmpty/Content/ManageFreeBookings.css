@@ -77,3 +77,8 @@ background-color:darkred;
         visibility:hidden;      
 }
 
+ .myContainer {
+            height: 1000px;
+            width: 100%;
+            /*background:repeating-linear-gradient(0deg,#7386D5,#ffffff,#000000);*/          
+        }

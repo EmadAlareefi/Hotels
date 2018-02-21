@@ -125,6 +125,9 @@
   <ItemGroup>
     <Content Include="Content\jquery-ui.css" />
     <Content Include="Content\ManageFreeBookings.css" />
+    <Content Include="Content\ManageFreeBookings.min.css">
+      <DependentUpon>ManageFreeBookings.css</DependentUpon>
+    </Content>
     <Content Include="Default.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
@@ -225,6 +228,7 @@
     <Content Include="Content\bootstrap\mixins\_border-radius.scss" />
     <Content Include="Content\bootstrap\mixins\_background-variant.scss" />
     <Content Include="Content\bootstrap\mixins\_alerts.scss" />
+    <None Include="bundleconfig.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
