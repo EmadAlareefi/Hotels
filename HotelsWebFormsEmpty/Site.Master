@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 
-<html lang="en">
+<html dir="rtl" lang="ar">
 <head runat="server">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,7 +15,8 @@
 </head>
 <body>
       <div class="wrapper">
-        <nav id="sidebar">
+          
+        <nav id="sidebar" class="active">
             <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
                 <i class="glyphicon glyphicon-align-left"></i>               
             </button>
@@ -60,7 +61,7 @@
                 </li>
             </ul>
         </nav>
-
+          
           <div class="myContent"> 
               <nav class="my-nav"></nav>  
          <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">

@@ -171,13 +171,17 @@ i, span {
 }
 
 #sidebar {
+    margin-left: 0%;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
     text-align: center;
     min-width: 250px;
     max-width: 250px;
     background: rgb(183, 131, 77);
     color: #fff;
     transition: all 0.3s;
-    margin-left: 0;
 }
 
     #sidebar.active {
@@ -196,7 +200,7 @@ i, span {
         }
 
     #sidebar ul li a {
-        text-align: left;
+        text-align: right;
     }
 
     #sidebar.active ul li a {
