@@ -299,7 +299,9 @@ ul.CTAs {
         border-radius: 5px;
         margin-bottom: 5px;
     }
-
+.right-to-left {
+direction:ltr;
+}
 
 
 
