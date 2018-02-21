@@ -9,14 +9,17 @@ namespace HotelsWebFormsEmpty
 {
 	public class BundleConfig
 	{
-        public static void RegisterBundles(BundleCollection bundles) {
-            // bundles.Add(new ScriptBundle("~/bundles/modernizr").Include("~/Scripts/modernizr-custom"));
+        public static void RegisterBundles(BundleCollection bundles)
+        {
 
-            bundles.Add(new ScriptBundle("~/a").Include(
-                                        "~/Scripts/modernizr-*"));
+            bundles.Add(new ScriptBundle("~/bundles/Site").Include("~/Scripts/Site.js"));
 
-            bundles.Add(new ScriptBundle("~/Site").Include(
-                                      "~/Scripts/Site.js"));
+            bundles.Add(new StyleBundle("~/bundles/SiteCs").Include("~/Content/Site.css"));
+
+            bundles.Add(new StyleBundle("~/bundles/ManageFreeBookings").Include("~/Content/ManageFreeBookings.css"));
+
+            BundleTable.EnableOptimizations = true;
+
 
 
             string str = "";
@@ -54,7 +57,5 @@ namespace HotelsWebFormsEmpty
                 LoadSuccessExpression = "window.jQuery"
             });
         }
-
-
     }
 }

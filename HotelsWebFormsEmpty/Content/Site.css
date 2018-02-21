@@ -171,11 +171,6 @@ i, span {
 }
 
 #sidebar {
-    margin-left: 0%;
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-    top: 0px;
     text-align: center;
     min-width: 250px;
     max-width: 250px;
@@ -188,7 +183,6 @@ i, span {
         min-width: 80px;
         max-width: 80px;
         text-align: center;
-        margin-left: 0 !important;
     }
 
         #sidebar.active .sidebar-header h3, #sidebar.active .CTAs {
@@ -299,8 +293,9 @@ ul.CTAs {
         border-radius: 5px;
         margin-bottom: 5px;
     }
+
 .right-to-left {
-direction:ltr;
+    direction: ltr;
 }
 
 

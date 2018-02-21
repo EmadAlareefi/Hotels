@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
      
     <title><%// Page.Title %></title>
+<%--    <webopt:BundleReference runat="server" Path="~/Content/css" />--%>
+     <asp:PlaceHolder runat="server">
+        <% Styles.Render("~/bundles/SiteCs"); %>
+    </asp:PlaceHolder>
    
-
-    <webopt:BundleReference runat="server" Path="~/Content/css" />
 </head>
 <body>
       <div class="wrapper">
@@ -35,16 +37,16 @@
                      </a>
                     <a href="#">
                         <i class="glyphicon glyphicon-briefcase"></i>
-                        About
+                        التأجير والحجوزات
                     </a>
                     <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">
                         <i class="glyphicon glyphicon-duplicate"></i>
-                        Pages
+                        الشقق والتسكين
                     </a>
                     <ul class="collapse list-unstyled right-to-left" id="pageSubmenu">
-                        <li><a runat="server" href="~/Pages/Management/ManageFreeBookings">Manage Booking</a></li>
-                        <li><a href="#">Page 2</a></li>
-                        <li><a href="#">Page 3</a></li>
+                        <li><a runat="server" href="~/Pages/Management/ManageFreeBookings">إدارة حالة الشقق</a></li>
+                        <li><a runat="server" href="~/Pages/Management/CheckIn">تسكين عميل</a></li>
+                        <li><a runat="server" href="~/Pages/Management/CheckOut">مغادرة عميل</a></li>
                     </ul>
                 </li>
                 <li>
@@ -56,7 +58,7 @@
                 <li>
                     <a href="#">
                         <i class="glyphicon glyphicon-send"></i>
-                        Contact
+                        تواصل معنا
                     </a>
                 </li>
             </ul>

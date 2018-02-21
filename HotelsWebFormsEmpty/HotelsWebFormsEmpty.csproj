@@ -154,7 +154,6 @@
     <Content Include="Scripts\ManageFreeBookings.js" />
     <Content Include="Scripts\Site.js" />
     <Content Include="Site.Master" />
-    <Content Include="Bundle.config" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
     <Content Include="Site.Mobile.Master" />
     <Content Include="Content\_bootstrap.scss" />
